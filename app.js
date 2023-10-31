@@ -42,7 +42,9 @@ app.post('/usuarios',  async (req, res) => {
     }
 });
 
-
+app.get('/', async (req, res) => {
+  return res.send('Olá mundo')
+})
 
 app.get('/usuarios', async (req, res) => {  
   try {
